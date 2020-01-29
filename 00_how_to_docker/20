@@ -1,0 +1,2 @@
+#If swarm is disabled 
+ docker swam init
