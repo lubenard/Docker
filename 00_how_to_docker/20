@@ -1,2 +1,3 @@
-#If swarm is disabled 
- docker swam init
+#If swarm is disabled
+docker swarm init -advertise-addr $(docker-machine ip Char)
+docker swarm join-token -q worker > ~/token_swarm_docker
