@@ -1,3 +1,4 @@
-#If swarm is disabled
-docker swarm init -advertise-addr $(docker-machine ip Char)
+#If swarm is disabled, connect to ssh to Char, via
+# docker-machine ssh Char
+docker swarm init --advertise-addr $(docker-machine ip Char)
 docker swarm join-token -q worker > ~/token_swarm_docker
