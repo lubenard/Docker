@@ -1,4 +1,4 @@
 eval $(docker-machine env Aiur)
 #connect to Aiur in ssh, by doing
 # docker-machine ssh Aiur
-docker swarm join --token ~/token_swarm_docker $(docker-machine ip Char):2377
+docker swarm join --token $(cat ~/token_swarm_docker) $(docker-machine ip Char):2377

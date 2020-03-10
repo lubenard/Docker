@@ -1,2 +1,1 @@
-docker rm -f 1db9f81b6b9b
-ae41e9a14e1c
+docker rm -f $(docker ps -a -q)

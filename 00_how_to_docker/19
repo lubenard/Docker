@@ -12,6 +12,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=3000)
 " > ~/hello_world.py
 
-#Get docker ip
-docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' Abathur
 docker exec Abathur python /root/hello_world.py
